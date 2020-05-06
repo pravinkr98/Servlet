@@ -1,0 +1,14 @@
+
+<script language="JavaScript" src="validation.js">
+</script>
+
+
+<h1 style="color:red;text-align:center">Marrige Eligibility Form</h1>
+<form action="marrigeurl" onsubmit="return validate(this)">
+Person name ::<input type="text" name="pname"/><span id="nameErr"></span><br><br>
+Person age ::<input type="password" name="page"/><span id="ageErr"></span><br><br>
+			<input type="hidden" name="vflag" value="no"/>
+Gender <input type="radio" name="gender" value="male" checked>Male &nbsp;&nbsp;
+  <input type="radio" name="gender" value="female">Female <br><br>
+<input type="submit" value="Check Marrige Eligibility">
+</form>
