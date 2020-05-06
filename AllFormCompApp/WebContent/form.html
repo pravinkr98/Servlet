@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form Components</title>
+</head>
+<body>
+<h1 style="color:red">Personal Details</h1>
+<form action="formurl" method="POST">
+<table border="0" align="left">
+<tr>
+<td>Name</td>
+<td><input type="text" name="tname" /></td>
+</tr>
+<tr>
+<td>Age</td>
+<td><input type="password" name="tage" /></td>
+</tr>
+<tr>
+<td>Gender</td>
+<td><input type="radio" name="gen" value="M" checked/>Male
+<input type="radio" name="gen" value="F" />FeMale</td>
+</tr>
+<tr>
+<td>Contact No:</td>
+<td><input type="tel" name="phone" /></td>
+</tr>
+<tr>
+<td>Address:</td>
+<td><textarea name="addrs" rows="4" cols="15"></textarea></td>
+</tr>
+<tr>
+<td>Martial Status</td>
+<td><input type="checkbox" name="ms" value="married"/>Married</td>
+</tr>
+<tr>
+<td>Date of Birth</td>
+<td><input type="date" name="dob" /></td>
+</tr>
+<tr>
+<td>Faviorite Week</td>
+<td><input type="week" name="fweek" /></td>
+</tr>
+<tr>
+<td>Faviorite Month</td>
+<td><input type="month" name="fmonth" /></td>
+</tr>
+<tr>
+<td>Faviorite Color</td>
+<td><input type="color" name="fcolor" /></td>
+</tr>
+<tr>
+<td>Salary Range</td>
+<td><input type="range" name="sal" min="1000" max="100000" /></td>
+</tr>
+<tr>
+<td>Qualification</td>
+<td><select name="qlfy">
+<option value="B.Tech/B.E">Engg</option>
+<option value="BCA/MCA">Professional</option>
+<option value="MBBS">Medical</option>
+<option value="B.Sc/M.Sc">Science</option>
+<option value="B.A/M.A">Arts</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Course:</td>
+<td><select name="crs" size="3" multiple>
+<option value="java">JAVA pkg</option>
+<option value="net">.NET pkg</option>
+<option value="testing">Testing pkg</option>
+<option value="oracle">Oracle pkg</option>
+<option value="php">PHP pkg</option>
+<option value="ds">DataScience pkg</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Hobbies</td>
+<td><input type="checkbox" name="hb" value="read" checked/>Reading
+<input type="checkbox" name="hb" value="tv" />WatchingTv
+<input type="checkbox" name="hb" value="sleep" />Travelling
+</td>
+</tr>
+<tr>
+<td>Facebook Url</td>
+<td><input type="url" name="furl" /></td>
+</tr>
+<tr>
+<td>Email id</td>
+<td><input type="email" name="emailid" /></td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="submit" value="submit" />
+<input type="reset" value="cancel" />
+</td>
+</tr>
+ 
+</table>
+</form>
+
+</body>
+</html>
