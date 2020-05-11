@@ -21,6 +21,7 @@
 	<servlet-mapping>
 		<servlet-name>html</servlet-name>
 		<url-pattern>/htmlurl/ok.pk</url-pattern>  <!-- <url-pattern>/htmlurl</url-pattern> -->
+		<url-pattern>/test1</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
