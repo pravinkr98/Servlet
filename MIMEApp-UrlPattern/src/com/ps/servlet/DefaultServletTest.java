@@ -10,7 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 //@WebServlet("/")
-@WebServlet(value= {"/","url"})
+@WebServlet(value= {"/","/url"})
+//@WebServlet(urlPatterns= {"/","/url"})
 public class DefaultServletTest extends HttpServlet {
 	
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
