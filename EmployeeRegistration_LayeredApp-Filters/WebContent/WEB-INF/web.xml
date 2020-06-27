@@ -3,10 +3,10 @@
   <display-name>EmployeeRegistration_LayeredApp-Filters</display-name>
   
   <welcome-file-list>
-    <welcome-file>employee_register.html</welcome-file>
+    <welcome-file>employee_register.jsp</welcome-file>
   </welcome-file-list>
   
-  <filter>
+  <!-- <filter>
   	<filter-name>timeCheckFilter</filter-name>
   	<filter-class>com.ps.filters.TimeCheckFilter</filter-class>
   </filter>
@@ -39,5 +39,5 @@
   	<servlet-name>control</servlet-name>
   	<url-pattern>/controller</url-pattern>
   </servlet-mapping>
-
+ -->
 </web-app>

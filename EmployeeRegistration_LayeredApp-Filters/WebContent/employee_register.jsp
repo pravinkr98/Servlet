@@ -27,5 +27,8 @@
 			<td><input type="submit" value="register"></td>
 			<td><input type="reset" value="cancel"></td>
 		</tr>
+		<tr>
+			<td colspan="2"><input type="hidden" name="cToken" value="${sToken}"/></td>
+		</tr>
 	</table>
 </form>

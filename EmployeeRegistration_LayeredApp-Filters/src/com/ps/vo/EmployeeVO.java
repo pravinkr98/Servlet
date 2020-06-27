@@ -6,6 +6,7 @@ public class EmployeeVO {
 	private String eaddr;
 	private String job;
 	private String sal;
+	
 	public String getEmpNO() {
 		return empNO;
 	}
@@ -36,4 +37,5 @@ public class EmployeeVO {
 	public void setSal(String sal) {
 		this.sal = sal;
 	}
+	
 }

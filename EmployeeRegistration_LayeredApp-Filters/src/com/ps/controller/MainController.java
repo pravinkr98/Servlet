@@ -3,6 +3,7 @@ package com.ps.controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,7 +15,7 @@ import com.ps.service.EmployeeMgmtService;
 import com.ps.service.EmployeeMgmtServiceImpl;
 import com.ps.vo.EmployeeVO;
 
-//@WebServlet("/controller")
+@WebServlet("/controller")
 public class MainController extends HttpServlet {
 	private EmployeeMgmtService service;
 
@@ -28,6 +29,7 @@ public class MainController extends HttpServlet {
 		EmployeeVO vo=null;
 		EmployeeDTO dto=null;
 		PrintWriter pw=null;
+		ServletContext sc=null;
 		pw=res.getWriter();
 		res.setContentType("text/html");
 		//read form data and store into vo class object
@@ -52,7 +54,12 @@ public class MainController extends HttpServlet {
 		catch(Exception e) {
 			pw.println("Internal Problem");
 		}
-		pw.println("<br><a href='employee_register.html'>Home</a>");
+		pw.println("<br><a href='employee_register.jsp'>Home</a><br><br>");
+		//get Access to ServletContext object
+		sc=getServletContext();
+		pw.println("request count :: "+sc.getAttribute("reqCount"));
+		//close stream
+		pw.close();
 				
 	}
 	
