@@ -26,6 +26,7 @@ public class ShowAccountBalanceServlet extends HttpServlet {
 		pw.println("<br><br><a href='index.html'>Home</a>");
 		//close stream
 		pw.close();
+		
 	}
 
 	
